@@ -1,0 +1,1 @@
+print('Я модуль из my_modul.py')
