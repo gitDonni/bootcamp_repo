@@ -1,0 +1,23 @@
+[
+    {
+        "login": "qwerty",
+        "email": "qwerty@gmail.com",
+        "age": 30,
+        "phone_number": 996550123321,
+        "language": "KG"
+    },
+    {
+        "login": "ytrewq",
+        "email": "ytrewq@gmail.com",
+        "age": 20,
+        "phone_number": 996700321123,
+        "language": "KG"
+    },
+    {
+        "login": "qazxsw",
+        "email": "qazxsw@gmail.com",
+        "age": 25,
+        "phone_number": 996770132312,
+        "language": "KG"
+    }
+]
