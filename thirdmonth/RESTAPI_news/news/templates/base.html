@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div id="header">
+    <div class="logo">
+        <a href="{% url 'index' %}"><img src="{% static 'images/icon.png' %}" alt="API NEWS"></a>
+    </div>
+  <nav>
+    <form class="search" action="search.php">
+      <input name="q" placeholder="Поиск..." type="search">
+    </form>
+    <ul>
+        <li>
+            <a href="{% url 'index' %}">Главная</a>
+        </li>
+        <li>
+            <a href="">Политика</a>
+        </li>
+        <li>
+            <a href="">Экономика</a>
+        </li>
+        <li>
+            <a href="">Спорт</a>
+        </li>
+        <li>
+            <a href="">Здоровье</a>
+        </li>
+        <li>
+            <a href="">Культура</a>
+        </li>
+    </ul>
+  </nav>
+</div>
+<div id="content">
+    <div class="news-content">
+{% block content %}{% endblock %}
+    </div>
+</div>
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+<footer class="py-4 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; WEB-Студия им. меня 2024</p>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Детальная страница новости</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto">
+            <a href="/" class="text-white text-lg">Вернуться к списку новостей</a>
+        </div>
+    </nav>
+    <div class="container mx-auto mt-8">
+        <h1 class="text-3xl mb-2">{{ news.title }}</h1>
+        <p><strong>Дата создания:</strong> {{ news.created_at }}</p>
+        <p><strong>Дата обновления:</strong> {{ news.updated_at }}</p>
+        <div class="mt-4 mb-2">
+            <h2 class="text-2xl">Описание</h2>
+            <p>{{ news.description}}</p>
+        </div>
+    </div>
+</body>
+</html>
